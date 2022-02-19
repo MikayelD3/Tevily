@@ -1,0 +1,119 @@
+@media(max-width:768px){
+    .container{
+        max-width:700px;
+    }
+     /*toolbar*/
+     .toolbar{
+         display:none;
+     }
+     /*navbar*/
+
+     .navbar>.container>.navbar-c{
+         display:none;
+     }
+     .menu{
+         position:relative;
+         display:block;  
+     }
+     .menu:hover+.menu-dropdown{
+        transform:translateX(0%);
+        transition:all 0.5s;
+        
+     }
+     /*header*/
+
+     .header>.container>h1{
+         max-width:300px;
+         left:33%;
+         font-size:50px;
+         line-height:50px;
+     }
+     .header>.container>p{
+         font-size:28px;
+         left:30%;
+     }
+     /*inputs*/
+     .inputs .container form>.first{
+         width:100%;
+     }
+     .inputs .container form>.second{
+         width:49%;
+     }
+     .inputs .container form>.third{
+         width:49%;
+     }
+     .inputs .container form>.fourth{
+         width:100%;
+     }
+     
+     /*gallery*/
+     .container-items>div{
+        text-align:center;
+        width:100%;
+    }
+      .container-items>div a{
+         font-size:20px;
+     }
+     
+     /*plan*/
+     .plan .container {
+        justify-content:center;
+    }
+     /*menu-dropdown*/
+    .menu-dropdown{
+        z-index:999999;
+        display:block;
+        position:absolute;
+        top:0;
+        left:-8px;
+        width:35%;
+        background-color:#313041;
+        height:2000px;
+        line-height:30px;
+        transform:translateX(-100%);
+        transition:all 0.5s;
+    }
+    .menu-dropdown .sticky{
+        padding:20px 10px;
+        background-color:#313041;
+        display:flex;
+        flex-direction: column;
+        gap:20px;
+        position:sticky;
+        top:0px;
+    }
+    .menu-dropdown .sticky>ul{
+       display:flex;
+       flex-direction:column;
+       row-gap:10px;
+    }
+    .menu-dropdown .sticky>ul>li{
+        display:flex;
+        flex-direction:row;
+        justify-content:space-between;
+        padding:15px 5px;
+        border-top:1px solid rgba(255, 255, 255, 0.1);
+    }
+    .menu-dropdown .sticky>ul>li:last-of-type{
+        border-bottom:1px solid rgba(255, 255, 255, 0.1);
+    }
+    .menu-dropdown .sticky>ul>li>a{
+        color:#fff;
+        font-size:14px;
+        font-weight:500;
+        width:100%;
+        
+    }
+    .menu-dropdown .sticky>ul>li>i{
+        width:30px;
+        height:30px;
+        text-align:center;
+        padding-top:5px;
+        color:#fff;
+        background-color:#e8604c;
+        font-size:20px;
+    }
+    }
+     
+
+     
